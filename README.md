@@ -1,4 +1,4 @@
-![IMG-20250508-WA0028](https://github.com/user-attachments/assets/b6472cb9-3007-43e0-840b-4e8e632ab3c1)# TaskFlow 🗂️
+# TaskFlow 🗂️
 **A Modern Task Management Android App Built with Kotlin + Firebase**
 
 [![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://github.com/bhrigutayal/TaskFlow/releases/tag/v1.0.0)
