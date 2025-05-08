@@ -1,8 +1,7 @@
 # TaskFlow 🗂️
 **A Modern Task Management Android App Built with Kotlin + Firebase**
 
-[![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://github.com/bhrigutayal/TaskFlow/releases/download/v1.0.0/app-release.apk)
-[![GitHub Repo](https://img.shields.io/badge/View%20Code-GitHub-black?style=for-the-badge&logo=github)](https://github.com/bhrigutayal/TaskFlow)
+[![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://github.com/bhrigutayal/TaskFlow/releases/tag/v1.0.0)
 
 ---
 
