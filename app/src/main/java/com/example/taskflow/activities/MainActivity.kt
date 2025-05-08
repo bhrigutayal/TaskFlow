@@ -75,7 +75,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         binding!!.navView.setNavigationItemSelectedListener(this)
 
         mSharedPreferences =
-            this.getSharedPreferences(Constants.PROGEMANAG_PREFERENCES, Context.MODE_PRIVATE)
+            this.getSharedPreferences(Constants.TASKFLOW_PREFERENCES, Context.MODE_PRIVATE)
 
         // Variable is used get the value either token is updated in the database or not.
         val tokenUpdated = mSharedPreferences.getBoolean(Constants.FCM_TOKEN_UPDATED, false)

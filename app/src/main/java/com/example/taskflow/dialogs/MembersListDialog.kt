@@ -1,5 +1,6 @@
 package com.example.taskflow.dialogs
 
+import android.annotation.SuppressLint
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
@@ -20,6 +21,7 @@ abstract class MembersListDialog(
 
     private var adapter: MemberListItemsAdapter? = null
 
+    @SuppressLint("InflateParams")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState ?: Bundle())
 
@@ -31,6 +33,7 @@ abstract class MembersListDialog(
         setUpRecyclerView(view)
     }
 
+    @SuppressLint("CutPasteId")
     private fun setUpRecyclerView(view: View) {
         view.findViewById<TextView>(R.id.tvTitle).text = title
 

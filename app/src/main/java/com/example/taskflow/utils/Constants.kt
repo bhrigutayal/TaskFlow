@@ -1,9 +1,7 @@
 package com.example.taskflow.utils
 
 import android.app.Activity
-import android.content.Intent
 import android.net.Uri
-import android.provider.MediaStore
 import android.webkit.MimeTypeMap
 
 object Constants {
@@ -36,11 +34,10 @@ object Constants {
     const val UN_SELECT: String = "UnSelect"
 
     //A unique code for asking the Read Storage Permission using this we will be check and identify in the method onRequestPermissionsResult
-    const val READ_STORAGE_PERMISSION_CODE = 1
     // A unique code of image selection from Phone Storage.
-    const val PICK_IMAGE_REQUEST_CODE = 2
 
-    const val PROGEMANAG_PREFERENCES: String = "ProjemanagPrefs"
+
+    const val TASKFLOW_PREFERENCES: String = "TaskFlowPrefs"
     const val FCM_TOKEN:String = "fcmToken"
     const val FCM_TOKEN_UPDATED:String = "fcmTokenUpdated"
 
@@ -59,15 +56,15 @@ object Constants {
     /**
      * A function for user profile image selection from phone storage.
      */
-    fun showImageChooser(activity: Activity) {
-        // An intent for launching the image selection of phone storage.
-        val galleryIntent = Intent(
-            Intent.ACTION_PICK,
-            MediaStore.Images.Media.EXTERNAL_CONTENT_URI
-        )
-        // Launches the image selection of phone storage using the constant code.
-        activity.startActivityForResult(galleryIntent, PICK_IMAGE_REQUEST_CODE)
-    }
+//    fun showImageChooser(activity: Activity) {
+//        // An intent for launching the image selection of phone storage.
+//        val galleryIntent = Intent(
+//            Intent.ACTION_PICK,
+//            MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+//        )
+//        // Launches the image selection of phone storage using the constant code.
+//        activity.startActivityForResult(galleryIntent, PICK_IMAGE_REQUEST_CODE)
+//    }
 
     /**
      * A function to get the extension of selected image.

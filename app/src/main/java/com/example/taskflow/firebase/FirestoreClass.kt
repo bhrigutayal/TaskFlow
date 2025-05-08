@@ -26,7 +26,7 @@ class FirestoreClass {
 
         mFireStore.collection(Constants.USERS)
             // Document ID for users fields. Here the document it is the User ID.
-            .document(getCurrentUserID())
+            .document(userInfo.id)
             // Here the userInfo are Field and the SetOption is set to merge. It is for if we wants to merge
             .set(userInfo, SetOptions.merge())
             .addOnSuccessListener {
@@ -127,7 +127,7 @@ class FirestoreClass {
 
                 Log.e(
                     activity.javaClass.simpleName,
-                    "Error while creating a board.",
+                    "Error updating user data.",
                     e
                 )
             }
@@ -189,7 +189,7 @@ class FirestoreClass {
             .addOnFailureListener { e ->
 
                 activity.hideProgressDialog()
-                Log.e(activity.javaClass.simpleName, "Error while creating a board.", e)
+                Log.e(activity.javaClass.simpleName, "Error fetching board list.", e)
             }
     }
 
@@ -211,7 +211,7 @@ class FirestoreClass {
             }
             .addOnFailureListener { e ->
                 activity.hideProgressDialog()
-                Log.e(activity.javaClass.simpleName, "Error while creating a board.", e)
+                Log.e(activity.javaClass.simpleName, "Error fetching board details.", e)
             }
     }
 
@@ -238,10 +238,8 @@ class FirestoreClass {
             .addOnFailureListener { e ->
                 if (activity is TaskListActivity) {
                     activity.hideProgressDialog()
-                } else if (activity is TaskListActivity) {
-                    activity.hideProgressDialog()
                 }
-                Log.e(activity.javaClass.simpleName, "Error while creating a board.", e)
+                Log.e(activity.javaClass.simpleName, "Error updating tasklist.", e)
             }
     }
 
@@ -281,7 +279,7 @@ class FirestoreClass {
                 }
                 Log.e(
                     activity.javaClass.simpleName,
-                    "Error while creating a board.",
+                    "Error fetching assigned members list details",
                     e
                 )
             }
@@ -337,7 +335,7 @@ class FirestoreClass {
             }
             .addOnFailureListener { e ->
                 activity.hideProgressDialog()
-                Log.e(activity.javaClass.simpleName, "Error while creating a board.", e)
+                Log.e(activity.javaClass.simpleName, "Error assigning member to board.", e)
             }
     }
 

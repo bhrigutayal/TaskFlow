@@ -21,6 +21,7 @@ abstract class LabelColorListDialog(
 
     private var adapter: LabelColorListItemsAdapter? = null
 
+    @SuppressLint("InflateParams")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState ?: Bundle())
 
@@ -33,6 +34,7 @@ abstract class LabelColorListDialog(
     }
 
 
+    @SuppressLint("CutPasteId")
     private fun setUpRecyclerView(view: View) {
         view.findViewById<TextView>(R.id.tvTitle).text = title
         view.findViewById<RecyclerView>(R.id.rvList).layoutManager = LinearLayoutManager(context)

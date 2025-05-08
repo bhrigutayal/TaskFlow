@@ -1,5 +1,6 @@
 package com.example.taskflow.adapters
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.Resources
 import android.view.LayoutInflater
@@ -64,6 +65,7 @@ open class TaskListItemsAdapter(
      * of the given type. You can either create a new View manually or inflate it from an XML
      * layout file.
      */
+    @SuppressLint("CutPasteId")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val model = list[position]
 

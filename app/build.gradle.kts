@@ -47,8 +47,8 @@ android {
 }
 
 dependencies {
-    implementation ("com.github.bumptech.glide:glide:4.11.0")
     implementation(libs.firebase.messaging.ktx)
+    implementation ("com.github.bumptech.glide:glide:4.11.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.11.0")
     implementation("com.google.android.gms:play-services-maps:18.2.0")
     implementation(libs.firebase.storage)
@@ -60,7 +60,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-    implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.auth.ktx)

@@ -3,7 +3,7 @@
 
     <string name="image_contentDescription">image</string>
     <string name="let_s_get_started_text">Let\'s Get started</string>
-    <string name="intro_text_description">Collaborate and Plan Together Across Multiple Devices on Projemanag’s Minimalist Interface.</string>
+    <string name="intro_text_description">Collaborate and Plan Together Across Multiple Devices on TaskFlow’s Minimalist Interface.</string>
     <string name="sign_in">SIGN IN</string>
     <string name="sign_up">SIGN UP</string>
 
@@ -61,5 +61,5 @@
     <string name="str_select_member">Select Member</string>
 
 
-    <string name="default_notification_channel_id">projemanag_notification_channel_id</string>
+    <string name="default_notification_channel_id">TaskFlow_notification_channel_id</string>
 </resources>
