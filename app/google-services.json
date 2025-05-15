@@ -1,26 +1,44 @@
 {
   "project_info": {
-    "project_number": "551635720997",
-    "project_id": "taskflow-5ea8e",
-    "storage_bucket": "taskflow-5ea8e.firebasestorage.app"
+    "project_number": "209260346687",
+    "project_id": "tourism-3aef0",
+    "storage_bucket": "tourism-3aef0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:551635720997:android:9694071ad724dafd0658cc",
+        "mobilesdk_app_id": "1:209260346687:android:652be986c499f35379a78a",
         "android_client_info": {
           "package_name": "com.example.taskflow"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "209260346687-94862o6f0nqvmvrpane01s05d17u89ns.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.taskflow",
+            "certificate_hash": "82b1dac167d6395418423650923e16130be5d861"
+          }
+        },
+        {
+          "client_id": "209260346687-6t22j5sqp2qc0g6htad6qj1vnruu78cn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyDJDv7d7brcU2vb9KzGUJDfuzVUKKRvrK0"
+          "current_key": "AIzaSyBC4mTQkYz5nycJ4uSUat31JNygAvNMRXQ"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209260346687-6t22j5sqp2qc0g6htad6qj1vnruu78cn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
